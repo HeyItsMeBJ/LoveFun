@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    width: 100vw;
+    height: 100vh;
+    background: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.con .con1 {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+}
+
+.con .line {
+    width: 2px;
+    height: 80%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con .line .dots {
+    width: 2px;
+    height: 20px;
+    background: #2c2c2c;
+}
+
+.con .con2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.con .con1 .childcon {
+    width: 95%;
+    height: 90%;
+    background: #2c2c2c;
+    border-radius: 20px;
+    box-shadow: -5px 2px 4px 0px rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.con .con2 .childcon {
+    width: 90%;
+    height: 90%;
+    background: #2c2c2c;
+    border-radius: 20px;
+    box-shadow: 5px 2px 4px 0px rgb(0, 0, 0);
+    position: relative;
+
+}
+
+.con .con2 .childcon img,
+.con .con1 .childcon img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.con .con2 .childcon .cover,
+.con .con1 .childcon .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #2c2c2c8c;
+    border-radius: inherit;
+}
+
+.con .con1 .childcon .pics {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #2c2c2c;
+    box-shadow: 0px 2px 5px 0px black;
+    border-radius: 10px;
+    /* border-style: solid; */
+   
+
+
+}
+.con .con1 .childcon .pics .text{
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:0px 2px 5px  black ;
+  
+   
+}
+.con .con1 .childcon .pics .text p{
+    font-weight: normal;
+    text-align: center;
+    font-size: small;
+}
+
+.con .con1 .childcon .pics .picchild {
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+
+
+}
+.con .con1 .childcon .pics .picchild img{
+    -webkit-user-drag: none;
+}
+
+.con .con1 .childcon .pic1 {
+   
+    width: 200px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    z-index:999;
+}
+.con .con1 .childcon .pic2{
+    width: 180px;
+    height: 350px;
+    top: 80px;
+    left: 80px;
+    z-index:998;
+}
+.con .con1 .childcon .pic3{
+    width: 200px;
+    height: 300px;
+    top: 90px;
+    left: 90px;
+    z-index:997;
+}
+.con .con1 .childcon .pic4{
+    width: 200px;
+    height: 350px;
+    top: 100px;
+    left: 100px;
+    z-index:996;
+}
+.con .con1 .childcon .pic5{
+    width: 200px;
+    height: 300px;
+    top: 120px;
+    left: 120px;
+    z-index:995;
+}
+.con .con1 .childcon .pic6{
+    width: 300px;
+    height: 225px;
+    top: 110px;
+    left: 100px;
+    z-index:994;
+}
+.con .con1 .childcon .pic7{
+    width: 320px;
+    height: 180px;
+    top: 100px;
+    left: 110px;
+    z-index:993;
+}
+.con .con1 .childcon .pic8{
+    width: 200px;
+    height: 400px;
+    top: 80px;
+    left: 100px;
+    z-index:992;
+}
+.con .con1 .childcon .pic9{
+    width: 250px;
+    height: 450px;
+    top: 100px;
+    left: 70px;
+    z-index:991;
+}
