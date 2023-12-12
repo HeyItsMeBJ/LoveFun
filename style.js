@@ -46,8 +46,9 @@ if (!isMobile()) {
         pic1.addEventListener('touchstart', mousedown)
 
         function mousedown(e) {
-            var offsetx = e.clientX - pic1.offsetLeft;
-            var offsety = e.clientY - pic1.offsetTop;
+        
+            var offsetx = e.changedTouches[0].clientX - pic1.offsetLeft;
+            var offsety = e.changedTouches[0].clientY - pic1.offsetTop;
             this.style.cursor = 'pointer';
             var tempIndex = this.style.zIndex
             this.style.zIndex = '1000';
@@ -56,8 +57,8 @@ if (!isMobile()) {
             // pic1.addEventListener('mouseout',mouseup);
 
             function mousemove(ev) {
-                var x = ev.clientX - offsetx + 'px';
-                var y = ev.clientY - offsety + 'px';
+                var x = ev.changedTouches[0].clientX - offsetx + 'px';
+                var y = ev.changedTouches[0].clientY - offsety + 'px';
                 this.style.top = y;
                 this.style.left = x;
             }
