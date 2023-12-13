@@ -204,6 +204,162 @@
 }
 
 
+
+.con .con2 .childcon .cd {
+    position: absolute;
+    top: 150px;
+    left: 65px;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px black;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+
+}
+
+.con .con2 .childcon .cd .small {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #969595;
+    border-width: 2px;
+    border-color: #757575;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con .con2 .childcon .cd .small .mid {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-width: 2px;
+    background: rgb(236, 225, 225);
+    border-color: rgb(206, 206, 206);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con .con2 .childcon .cd img {
+    width: 95%;
+    height: 95%;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.con .con2 .childcon .cd .active{
+    animation: rotate 60s infinite;
+
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.con .con2 .childcon .controls {
+    width: 70%;
+    height: 80px;
+    position: absolute;
+    bottom: 150px;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.con .con2 .childcon .controls .prev,
+.con .con2 .childcon .controls .next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5f5e5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px black;
+cursor: pointer;
+
+}
+
+.con .con2 .childcon .controls .play{
+    /* margin-bottom: 50px; */
+    /* padding-left: 3px; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #5f5e5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px black;
+    cursor: pointer;
+
+}
+.con .con2 .childcon .controls .prev:hover,
+.con .con2 .childcon .controls .next:hover{
+    background: #464646;
+    transition: all .2s ;
+}
+.con .con2 .childcon .controls .prev:active,
+.con .con2 .childcon .controls .next:active{
+    background: #313131;
+    transition: all .2s ;
+}
+.con .con2 .childcon .controls .play:hover{
+    background: #464646;
+    transition: all .2s ;
+}
+.con .con2 .childcon .controls .play:active{
+    background: #313131;
+    transition: all .2s ;
+}
+
+.con .con2 .childcon audio{
+    position: absolute ;
+    bottom: 80px;
+    left: 20px;
+}
+.con .con2 .childcon .songname{
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 20px;
+    left: 40px;
+    color: #c8cbd0;
+    font-size: xx-large;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px) {
     .con .line {
         display: none;
@@ -268,15 +424,16 @@
         height: 225px;
 
     }
+
     .con .con1 .childcon .pics .text {
         color: white;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: 0px 2px 5px black;
-    font-size: small;
-    
+        font-size: small;
+
     }
-    
+
     .con .con1 .childcon .pics .text p {
         font-weight: lighter;
         text-align: center;
