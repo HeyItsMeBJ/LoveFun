@@ -42,11 +42,14 @@ if (!isMobile()) {
 } else {
 
     console.log('mobile')
+
+  
     pics.forEach(function (pic1) {
         pic1.addEventListener('touchstart', mousedown)
 
         function mousedown(e) {
-        
+        e.preventDefault();
+    e.stopImmediatePropagation();
             var offsetx = e.changedTouches[0].clientX - pic1.offsetLeft;
             var offsety = e.changedTouches[0].clientY - pic1.offsetTop;
             this.style.cursor = 'pointer';
@@ -72,10 +75,15 @@ if (!isMobile()) {
         }
     })
 
+    
 
 
 
 }
+
+
+
+
 
 
 
