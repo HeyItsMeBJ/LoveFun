@@ -66,6 +66,9 @@
     border-radius: 20px;
     box-shadow: 5px 2px 4px 0px rgb(0, 0, 0);
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -207,8 +210,8 @@
 
 .con .con2 .childcon .cd {
     position: absolute;
-    top: 150px;
-    left: 65px;
+    top: 200px;
+    /* left: 65px; */
     width: 120px;
     height: 120px;
     background: #ffffff;
@@ -274,7 +277,7 @@
     width: 70%;
     height: 80px;
     position: absolute;
-    bottom: 150px;
+    bottom: 80px;
     /* background: #000; */
     display: flex;
     justify-content: space-around;
@@ -336,10 +339,10 @@ cursor: pointer;
 }
 .con .con2 .childcon .songname{
     position: absolute;
-    text-align: left;
+    text-align: center;
     width: 100%;
     top: 20px;
-    left: 40px;
+    /* left: 40px; */
     color: #c8cbd0;
     font-size: xx-large;
 
@@ -365,8 +368,12 @@ cursor: pointer;
         display: none;
     }
 
-    .con .con2 {
+    .con .con1 {
         display: none;
+    }
+
+    .con .con2{
+       width: 500px;
     }
 
     .con .con1 {
